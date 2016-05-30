@@ -1,90 +1,26 @@
-/* ------------------------------------- */
-/*   Body
-/* ------------------------------------- */
+// -------------------------------------
+//   HEADINGS
+// -------------------------------------
 
-html,
-input,
-button,
-textarea {
-	-webkit-font-smoothing: antialiased;
-	-webkit-text-size-adjust: 100%;
-}
-
-body {
-	font-family: $b-primary-font-family;
-	line-height: $b-line-height;
-}
-
-/* ------------------------------------- */
-/*   Headings
-/* ------------------------------------- */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: $b-primary-font-family;
-	line-height: $b-line-height;
-	margin-top: 0;
-}
-
-h1.inverted,
-h2.inverted,
-h3.inverted,
-h4.inverted,
-h5.inverted,
-h6.inverted {
-	color: $white;
-}
-
-h1 {
-	font-size: #{$b-heading-1}em;
-	margin-bottom: 10px;
-	color: lighten($blue, 10%);
-}
-
-h2 {
-	font-size: #{$b-heading-2}em;
-}
-
-h3 {
-	font-size: #{$b-heading-3}em;
-}
-
-h4 {
-	font-size: #{$b-heading-4}em;
-}
-
-h5 {
-	font-size: #{$b-heading-5}em;
-	text-transform: uppercase;
-}
-
-h6 {
-	font-size: #{$b-heading-6}em;
-	text-transform: uppercase;
-}
+//h1,
+//h2,
+//h3,
+//h4,
+//h5,
+//h6
+//
+//h1.inverted,
+//h2.inverted,
+//h3.inverted,
+//h4.inverted,
+//h5.inverted,
+//h6.inverted
 
 
-/* ------------------------------------- */
-/*   Paragraphy & Blockquote
-/* ------------------------------------- */
+// -------------------------------------
+//   PARAGRAPHY & BLOCKQUOTE
+// -------------------------------------
 
-p {
-	color: $gray;
-	font-size: $b-font-size-md;
-	margin-top: 0;
-	margin-bottom: #{$b-line-height}em;
-}
+p
 
-blockquote {
-	margin: #{$b-space}px 0;
-	font-size: #{$b-blockquote-font-size}em;
-}
-
-
-/* ------------------------------------- */
-/*   BOLD TEXT
-/* ------------------------------------- */
+blockquote

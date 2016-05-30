@@ -1,0 +1,47 @@
+
+.controll {
+	@include border-bottom-radius(5px);
+	background-color: $white;
+	border-top-color: none;
+
+	border: 1px solid $c-border;
+
+	.btn-group {
+		display: inline-block;
+		position: relative;
+		right: 0;
+	}
+}
+
+.controll__head {
+	display: flex;
+	padding: $b-padding;
+	width: 100%;
+	border-bottom: 1px solid $c-border;
+}
+
+.controll__foo {
+	padding: $b-padding;
+}
+
+.controll__cell {
+	width: 33.333%;
+	vertical-align: middle;
+	display: table-cell;
+	z-index: 2;
+}
+
+.controll__item {
+	display: inline;
+	vertical-align: middle;
+	margin-right: 20px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.social {
+	display: inline-flex;
+	align-items: center;
+}

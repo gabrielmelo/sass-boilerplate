@@ -1,0 +1,33 @@
+/* ========================================================================== */
+/*   HERO
+/* ========================================================================== */
+
+.hero {
+	background-color: #00ADCB;
+	background-image: url('../image/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: conver;
+	background-attachment: fixed;
+
+	&__text {
+		max-width: 460px;
+		color: $white;
+		position: relative;
+	}
+
+	&__text--left {
+		float: left;
+		top: 70px;
+	}
+
+	// Title and Subtitle
+
+	.title {
+		font-weight: 900;
+	}
+
+	.title,
+	.subtitle {
+		color: $white;
+	}
+}

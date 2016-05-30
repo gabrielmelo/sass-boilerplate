@@ -1,0 +1,87 @@
+/* ========================================================================== */
+/*   GLOBAL CLASS
+/* ========================================================================== */
+
+// ----- Display  ----- //
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+// ----- Float  ----- //
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+// ----- Text   ----- //
+.a-center {
+  text-align: center;
+}
+
+.a-left {
+  text-align: left;
+}
+
+.a-right {
+  text-align: right;
+}
+
+.a-justify {
+  text-align: justify;
+}
+
+.text--none {
+  text-transform: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+// ----- Colors   ----- //
+.bg-green {
+	background: $green;
+}
+
+.c-green {
+  color: $green;
+}
+
+// ----- Box  ----- //
+.inner {
+  padding: #{$b-space}px;
+  overflow: hidden;
+}
+
+// ----- border  ----- //
+.border {
+	height: auto;
+	border: 1px solid;
+}
+
+.border-divider {
+	border-bottom: 1px solid;
+}
+
+.transition {
+  @include transition;
+}
+
+.box--shadow {
+  @include box-shadow($blur:5px);
+}

@@ -1,0 +1,13 @@
+
+// ----- Featured  ----- //
+
+.featured {
+    overflow: hidden;
+    position: relative;
+    top: -80px;
+    z-index: 1;
+
+    .courses__item {
+        padding: #{$b-space}px;
+    }
+}

@@ -1,0 +1,15 @@
+// ----- badge ----- //
+.badge {
+	padding: 0 7px;
+	position: relative;
+	@include border-radius(10px);
+	font-size: $b-font-size-xs;
+}
+
+.badge--gree {
+	background-color: $green;
+}
+
+.badge--error {
+	background-color: $red;
+}

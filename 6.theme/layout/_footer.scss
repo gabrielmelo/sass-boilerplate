@@ -1,0 +1,19 @@
+/* ------------------------------------- */
+/*   Footer
+/* ------------------------------------- */
+
+.page-footer {
+	background-color: $blue;
+	padding: #{$b-space}px;
+	position: relative;
+	float: left;
+	width: 100%;
+
+	p {
+		color: $white;
+	}
+
+	a {
+		color: inherit		
+	}
+}

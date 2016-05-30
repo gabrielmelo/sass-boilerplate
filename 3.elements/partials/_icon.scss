@@ -1,0 +1,40 @@
+// icon
+.icon {
+	display: inline-block;
+	text-align: center;
+}
+
+// margin
+.icon--left {
+	margin-right: 5px;
+	.fa {
+		margin-right: 5px;
+	}
+}
+
+.icon--right {
+	margin-left: 5px;
+}
+
+// size
+.icon--sm {
+  width: 20px;
+	height: auto;
+	font-size: 15px;
+}
+
+.icon--md {
+  width: 35px;
+	height: auto;
+	font-size: 20px;
+}
+
+.icon--lg {
+  width: 60px;
+	height: auto;
+}
+
+// color
+.icon--red {
+	color: $red;
+}

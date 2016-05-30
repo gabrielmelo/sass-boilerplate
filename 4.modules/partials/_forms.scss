@@ -1,0 +1,48 @@
+/* ========================================================================== */
+/*   FORMS ELEMENTS BASE CONFIG
+/* ========================================================================== */
+
+.form {
+	font-size: $b-font-size-sm;
+}
+
+/* ------------------------------------- */
+/*   Fieldset Primary
+/* ------------------------------------- */
+
+.fieldset {
+	width: auto;
+	border: none;
+
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.field-block {
+	display: block;
+
+}
+
+.field-block:last-child {
+	margin-bottom: 0;
+}
+
+.field-group {
+	display: table;
+	width: 100%;
+ 	 margin-bottom: 1rem;
+}
+
+
+.fieldset--2-3 {
+	width: 65%;
+	display: inline-block;
+}
+
+.fieldset--1-3 {
+	width: 29%;
+	display: inline-block;
+	margin-left: 25px;
+}

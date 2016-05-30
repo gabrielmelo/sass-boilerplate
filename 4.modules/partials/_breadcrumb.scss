@@ -1,0 +1,31 @@
+/* ------------------------------------- */
+/*  Breadcrumb
+/* ------------------------------------- */
+
+// ----- Breadcrumb  Defaulf ----- //
+.breadcrumb {
+	font-weight: 500;
+	font-size: $b-font-size-sm;
+	text-transform: uppercase;
+	border-bottom: 1px $b-borderStyle;
+	line-height: 0;
+
+	&__inner {
+		padding: $b-padding / 2 $b-padding;
+	}
+
+	li {
+		margin-right: 10px;
+
+		a:after {
+			content: " > ";
+			display: inline;
+			margin-left: 10px;
+		}
+	}
+	a.is--active {
+		&:after {
+			content: " ";
+		}
+	}
+}

@@ -1,0 +1,13 @@
+.menssage {
+	background-color: lighten($gray, 50%);
+	height: 40px;
+	line-height: 3;
+    color: $white;
+
+	&--top {
+        width: 100%;
+        border-top: $b-borderWidth solid lighten($gray, 40%);
+		border-bottom: $b-borderWidth solid lighten($gray, 40%);
+		transform: translateY(-100%);
+	}
+}

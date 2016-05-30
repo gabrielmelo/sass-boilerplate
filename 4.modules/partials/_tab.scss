@@ -1,0 +1,27 @@
+/* ========================================================================== */
+/*   TABS
+/* ========================================================================== */
+
+.tab {
+    &__item {
+        display: none;
+    }
+}
+
+.tab--inline {
+	margin-right: #{$b-space}px;
+    display: inline-block;
+
+	&:last-child {
+	  margin-right: 0;
+	}
+}
+
+
+.tab__item {
+	display: none;
+}
+
+.tab__item.is--active {
+	display: block;
+}

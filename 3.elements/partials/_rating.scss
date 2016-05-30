@@ -1,0 +1,18 @@
+
+// ----- Rating ----- //
+.rating {
+	margin-top: $;
+
+	.rating__value,
+	.ratting__text {
+		margin: 5px 3px;
+	}
+
+	.icon {
+		color: $green;
+	}
+
+	.icon-group {
+		margin-bottom: 5px;
+	}
+}

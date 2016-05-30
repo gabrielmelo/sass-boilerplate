@@ -1,0 +1,29 @@
+// ----- list ----- //
+.list {
+	overflow: hidden;
+}
+
+.list--block {
+
+	.item {
+		display: block;
+	}
+
+	.icon {
+		color: inherit;
+	}
+}
+
+// ----- list inline ----- //
+.list--inline {
+
+	.item {
+		display: inline-block;
+	}
+}
+
+
+
+.item {
+	line-height: 1.8;
+}

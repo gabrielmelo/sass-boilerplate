@@ -1,0 +1,14 @@
+.avatar {
+	margin: #{$b-space-l}px 0;
+	overflow: hidden;
+
+	.avatar__photo {
+		display: inline-block;
+		margin-right: #{$b-space-s}px;
+	}
+
+	.meta {
+		display: block;
+		margin-bottom: 0;
+	}
+}

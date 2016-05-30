@@ -1,0 +1,22 @@
+.section {
+	border-color: lighten($gray-light, 10%);
+
+	&__title {
+		color: $gray;
+		margin-top: 0;
+	}
+
+	&__sub-title {
+		color: $gray;
+		margin-bottom: #{$b-space};
+		margin-top: 0;
+	}
+
+	&--transparent {
+		background: transparent;
+	}
+
+	&--white {
+		background: $white;
+	}
+}

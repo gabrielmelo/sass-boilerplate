@@ -1,0 +1,156 @@
+// ----- border radius  ----- //
+@mixin border-radius($radius: 4px)
+	-webkit-border-radius: $radius
+	-moz-border-radius:    $radius
+	-ms-border-radius:     $radius
+	border-radius:         $radius
+
+@mixin border($border-width: null, $border-style: solid, $border-color: $border-color)
+	border: $border-width $border-style $border-color
+
+////@mixin border-bottom-radius($radius: 2px)
+////	-webkit-border-bottom-left-radius:   $radius
+////	-moz-border-bottom-left-radius:      $radius
+////	-ms-border-bottom-left-radius:       $radius
+////	border-bottom-left-radius:           $radius
+////	-webkit-border-bottom-right-radius:  $radius
+////	-moz-border-bottom-right-radius:     $radius
+////	-ms-border-bottom-right-radius:      $radius
+////	border-bottom-right-radius:          $radius
+//
+
+// ----- Transition  ----- //
+@mixin transition ($prop: all, $time: 0.3s, $ease: linear)
+	transition: $prop $time $ease
+	-webkit-transition: $prop $time $ease
+	-moz-transition: $prop $time $ease
+	-ms-transition: $prop $time $ease
+	-o-transition: $prop $time $ease
+
+// ----- Box Shadow  ----- //
+@mixin box-shadow($horizontal: 0px, $vertical: 1px, $blur: 4px, $color: $dark)
+	-webkit-box-shadow: $horizontal $vertical $blur $color
+	-moz-box-shadow: $horizontal $vertical $blur $color
+	-ms-box-shadow: $horizontal $vertical $blur $color
+	-o-box-shadow: $horizontal $vertical $blur $color
+	box-shadow: $horizontal $vertical $blur $color
+
+// ----- Position  ----- //
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null)
+	position: $position
+	top: $top
+	right: $right
+	bottom: $bottom
+	left: $left
+
+// ----- Button ----- //
+@mixin button($bg-color, $text-color, $border-color: null, $border-style: null, $border-width: null)
+	background-color: $bg-color
+	color: $text-color
+	border-color: $border-color
+	border-style: $border-style
+	border-width: $border-width
+
+	@include transition
+
+	&:hover
+		background-color: darken($bg-color, 20%)
+		color: darken($text-color, 20%)
+		@include transition
+
+	&:active
+		background-color: darken($bg-color, 10%)
+		color: darken($text-color, 10%)
+		@include transition
+
+// ----- Input Placeholder ----- //
+@mixin input-placeholder
+	&::-webkit-input-placeholder
+		@content
+	&::-moz-placeholder
+		@content
+	&::-moz-placeholder
+		@content
+	&:-ms-input-placeholder
+		@content
+
+
+// ----- Breakpoints ----- //
+/* Extra small (Mobile, 320px and up) */
+@mixin mobile
+	@media only screen and (min-width: $screen-xs)
+		@content
+
+/* Small devices (tablets, 768px and up) */
+@mixin tablet
+	@media only screen and (min-width: $screen-sm)
+		@content
+
+//* Medium devices (desktop, 992px and up) */
+@mixin desktop
+	@media only screen and (min-width: $screen-md)
+		@content
+
+/* Large devices (Widescreen, 1300px and up) */
+@mixin widescreen
+	@media only screen and (min-width: $screen-lg)
+		@content
+
+@mixin keyframes($animation-name)
+	@-webkit-keyframes #{$animation-name}
+		@content
+
+	@-moz-keyframes #{$animation-name}
+		@content
+
+	@-ms-keyframes #{$animation-name}
+		@content
+
+	@-o-keyframes #{$animation-name}
+		@content
+
+	@keyframes #{$animation-name}
+		@content
+
+@mixin animation($str)
+	-webkit-animation: #{$str}
+	-moz-animation: #{$str}
+	-ms-animation: #{$str}
+	-o-animation: #{$str}
+	animation: #{$str}
+
+// ----- Icon ----- //
+$image-path: '../icons' !default
+$fallback-extension: 'png' !default
+$retina-suffix: '@2x'
+@mixin background-image($name)
+	-webkit-mask-image: url(#{$image-path}/#{$name}.svg)
+	mask-image: url(#{$image-path}/#{$name}.svg)
+	mask-repeat: no-repeat
+	-webkit-mask-repeat: no-repeat
+	-webkit-mask-size: contain
+	mask-size: contain
+
+	.no-svg &
+		background-image: url(#{$image-path}/#{$name}.#{$fallback-extension})
+		background-size: cover
+		@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)
+			background-image: url(#{$image-path}/#{$name}#{$retina-suffix}.#{$fallback-extension})
+
+// -------------------------------------
+//   Aspect Ratio
+// -------------------------------------
+@mixin aspect-ratio($width, $height)
+	position: relative
+	&:before
+		display: block
+		content: ""
+		width: 100%
+		padding-top: ($height / $width) * 100%
+
+	> .content
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0

@@ -23,17 +23,30 @@
 	float: right
 
 // ----- Text  ----- //
-.aline-center
+.align-center
 	text-align: center
 
-.aline-left
+.align-left
 	text-align: left
 
-.aline-right
+.align-right
 	text-align: right
 
-.aline-justify
+.align-justify
 	text-align: justify
 
 .uppercase
 	text-transform: uppercase
+
+.text-bold
+	font-weight: 700
+// ----- Transition ----- //
+.transition
+	@include transition
+
+// ----- Animation Slide-in ----- //
+@include keyframes(slide-in)
+	0%
+		opacity: 0
+	90%
+		opacity: 1

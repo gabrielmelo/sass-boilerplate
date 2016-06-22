@@ -4,11 +4,8 @@
 .list
 	overflow: hidden
 
-// ----- list Block----- //
-//.list-block
-
-// ----- list Inline ----- //
-//.list-inline
-	.item
-		display: inline-block
-
+	&__item
+		+font-size(16)
+		+line-height(24)
+		color: $grey
+		margin-bottom: $space-sm

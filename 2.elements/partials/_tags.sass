@@ -1,15 +1,13 @@
-/* ========================================================================== */
-/*   TAGS
-/* ========================================================================== */
+// -------------------------------------
+//  TAGS
+// -------------------------------------
 
-.tag {
-  border-radius: 50px;
-  font-size: $b-font-size-sm;
-  text-align: center;
-  background: $green;
-  color: $white;
+.tag
+	+font-size(12)
+	font-weight: 700
+	letter-spacing: 0.85px
+	+line-height(14)
 
-  &--sm {
-    padding: 5px 10px;
-  }
-}
+.tag-name
+	color: $light-grey
+	text-transform: uppercase

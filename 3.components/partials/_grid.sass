@@ -1,0 +1,100 @@
+// -------------------------------------
+//  CONTAINER
+// -------------------------------------
+
+.container
+	margin: 0 auto
+	max-width: $max-width-container
+
+// -------------------------------------
+//  GRID SYSTEM
+// -------------------------------------
+
+// ----- Row ----- //
+
+.row
+	margin-left: -$gutter
+	margin-right: -$gutter
+
+// ----- Columns  ----- //
+
+[class^="column-"]
+	float: left
+	padding: 0 $gutter
+
+.row:after
+	content: ""
+	display: table
+	clear: both
+
+
+/* Column widths  */
+@for $i from 1 through $column-count
+	.column-#{$i}
+		width: ( 100 / $column-count ) * $i * 1%
+
+@for $i from 1 through $column-count
+	+mobile
+		.pull-#{$i}
+			margin-left: 0
+
+	+desktop
+		.pull-#{$i}
+			margin-left: ( 100 / $column-count ) * $i * 1%
+
+@for $i from 1 through $column-count
+	+mobile
+		.push-#{$i}
+			margin-right: 0
+
+	+desktop
+		.push-#{$i}
+			margin-right: ( 100 / $column-count ) * $i * 1%
+
+/* Special Classes */
+.column-full
+	width: 100%
+
+.column-third
+	width: (100 / 3) * 1%
+
+
+.column-two-thirds
+	width: (100 / 3) * 2%
+
+.column-half
+	width: (100 / 2) * 1%
+
+
+.column-quarter
+	width: (100 / 4) * 1%
+
+/* Responsive */
+@media (max-width: $screen-sm)
+	.container
+		width: $container-sm
+
+	[class^="column-"]
+		width: 100%
+		margin-bottom: $gutter
+
+	/* The row */
+	.row
+		margin-left: -$gutter / 2
+		margin-right: -$gutter / 2
+
+@media (max-width: $screen-md)
+	[class^="column-"]
+		float: left
+		padding: 0 $gutter / 2
+
+	/* The row */
+	.row
+		margin-left: -$gutter
+		margin-right: -$gutter
+
+
+@media (max-width: $screen-lg)
+	// ----- Container  ----- //
+	.container
+		width: $container-lg

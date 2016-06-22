@@ -1,0 +1,19 @@
+// -------------------------------------
+//   BREADCRUMB
+// -------------------------------------
+
+.breadcrumb
+	&__inner
+		padding: $space-md
+
+	&__item
+		margin-right: 10px
+
+		a:after
+			content: " > "
+			display: inline
+			margin-left: 10px
+
+	a.is--active
+		&:after
+			content: " "

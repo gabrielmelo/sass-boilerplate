@@ -3,27 +3,86 @@
 // -------------------------------------
 .icon
 	display: inline-block
-
+	background-repeat: no-repeat
+	cursor: pointer
+	background-color: $dark
 
 .icon--left
-	margin-right: 5px
+	margin-right: $space-xs
 
 
 .icon--right
-	margin-left: 5px
+	margin-left: $space-xs
 
-
-// size
 .icon--sm
-  	width: 20px
-	height: auto
-	font-size: 15px
+	width: $space-sm
+	height: $space-sm
+	background-size: $space-sm
 
 .icon--md
-  	width: 35px
-	height: auto
-	font-size: 20px
+	width: 25px
+	height: 25px
+	background-size: 25px
 
 .icon--lg
-  	width: 60px
-	height: auto
+	width: $space-lg
+	height: $space-lg
+	background-size: $space-lg
+
+.icon-instagram
+	+background-image('instagram')
+
+.icon-facebook
+	+background-image('facebook')
+
+.icon-twitter
+	+background-image('twitter')
+
+.icon-youtube
+	+background-image('youtube')
+
+.icon-spotify
+	+background-image('spotify')
+
+.icon-search
+	+background-image('magnifying-glass')
+
+.icon-arrow-down
+	+background-image('arrow-down')
+
+.icon-arrow-left
+	+background-image('left-arrow')
+
+.icon-arrow-right
+	+background-image('right-arrow')
+
+.icon-donwload
+	+background-image('cloud-arrow-download')
+
+.icon-arrow-up
+	width: 0
+	height: 0
+	border-left: 10px solid transparent
+	border-right: 10px solid transparent
+	border-bottom: 10px solid white
+
+// .arrow-down
+//   width: 0
+//   height: 0
+//   border-left: 20px solid transparent
+//   border-right: 20px solid transparent
+//   border-top: 20px solid #f00
+//
+// .arrow-right
+//   width: 0
+//   height: 0
+//   border-top: 60px solid transparent
+//   border-bottom: 60px solid transparent
+//   border-left: 60px solid green
+//
+// .arrow-left
+//   width: 0
+//   height: 0
+//   border-top: 10px solid transparent
+//   border-bottom: 10px solid transparent
+//   border-right:10px solid blue

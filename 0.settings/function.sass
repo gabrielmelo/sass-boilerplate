@@ -1,0 +1,16 @@
+
+// ----- Calculate px to rem ----- //
+@function to-em( $value )
+	@return ( $value / $font-size ) * 1em
+
+@mixin font-size($size)
+	font-size: to-em($size)
+
+
+@function line-height( $value )
+	@return ( $value / $font-size )
+
+@mixin line-height($height-size)
+	line-height: line-height($height-size)
+
+

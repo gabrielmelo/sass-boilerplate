@@ -1,0 +1,53 @@
+// -------------------------------------
+//   PAGINATION
+// -------------------------------------
+
+.pagination
+	padding: $space-sm
+	+font-size(14)
+	display: flex
+	align-items: baseline
+
+	&__item
+		margin-left: $space-sm
+		margin-right: $space-sm
+		color: $grey
+
+		&:hover
+			color: $blue
+
+		&:first-child
+			margin-left: 0
+
+		&:last-child
+			margin-right: 0
+
+	&__left,
+	&__right
+		color: $grey
+		width: 30%
+
+		&:hover
+			color: $blue
+
+			.icon
+				background-color: $blue
+	&__guide
+		width: 70%
+		text-align: center
+
+	&__right
+		float: right
+		text-align: right
+
+	&__item.is--active
+		background: $blue
+		color: white
+		padding: $space-xs
+
+		+border-radius(50px)
+
+		width: 20px
+		display: inline-block
+		height: 20px
+		text-align: center

@@ -1,1 +1,1 @@
-# SASS Skeleton
+# Sass Skeleton

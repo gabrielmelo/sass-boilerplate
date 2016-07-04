@@ -3,13 +3,13 @@
 // -------------------------------------
 
 .anchor
-	// color: $blue
+	color: $anchor-color
 	text-underline: none
 	display: inline-block
 	+line-height(24)
 
 	&:hover
-		// color: $blu
+		color: lighten($anchor-color, 20%)
 
 	&:active
-		// color: $dark-blue
+		color: lighten($anchor-color, 30%)

@@ -8,16 +8,16 @@
 @mixin border($border-width: null, $border-style: solid, $border-color: $border-color)
 	border: $border-width $border-style $border-color
 
-////@mixin border-bottom-radius($radius: 2px)
-////	-webkit-border-bottom-left-radius:   $radius
-////	-moz-border-bottom-left-radius:      $radius
-////	-ms-border-bottom-left-radius:       $radius
-////	border-bottom-left-radius:           $radius
-////	-webkit-border-bottom-right-radius:  $radius
-////	-moz-border-bottom-right-radius:     $radius
-////	-ms-border-bottom-right-radius:      $radius
-////	border-bottom-right-radius:          $radius
-//
+@mixin border-bottom-radius($radius: 2px)
+	-webkit-border-bottom-left-radius:   $radius
+	-moz-border-bottom-left-radius:      $radius
+	-ms-border-bottom-left-radius:       $radius
+	border-bottom-left-radius:           $radius
+	-webkit-border-bottom-right-radius:  $radius
+	-moz-border-bottom-right-radius:     $radius
+	-ms-border-bottom-right-radius:      $radius
+	border-bottom-right-radius:          $radius
+
 
 // ----- Transition  ----- //
 @mixin transition ($prop: all, $time: 0.3s, $ease: linear)
@@ -28,7 +28,7 @@
 	-o-transition: $prop $time $ease
 
 // ----- Box Shadow  ----- //
-@mixin box-shadow($horizontal: 0px, $vertical: 1px, $blur: 4px, $color: $dark)
+@mixin box-shadow($horizontal: 0px, $vertical: 1px, $blur: 2px, $color: $light-grey)
 	-webkit-box-shadow: $horizontal $vertical $blur $color
 	-moz-box-shadow: $horizontal $vertical $blur $color
 	-ms-box-shadow: $horizontal $vertical $blur $color
@@ -136,6 +136,7 @@ $retina-suffix: '@2x'
 		background-size: cover
 		@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)
 			background-image: url(#{$image-path}/#{$name}#{$retina-suffix}.#{$fallback-extension})
+
 
 // -------------------------------------
 //   Aspect Ratio

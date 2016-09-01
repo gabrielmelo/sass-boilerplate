@@ -5,35 +5,3 @@
 // ----- Page ----- //
 .page
 	font: +font-size(16)/$line-height $font-family-primary
-	background-color: white
-	@include animation('slide-in 3s')
-
-	// ----- Page Login ----- //
-	&-login
-		.page-header__top
-			.logo
-				margin: 0 auto
-
-		.search,
-		.menu-sign-in,
-		.nav--bar
-			display: none
-
-
-		.menu-go-back
-			display: block
-
-
-	// ----- Main & Aside ----- //
-	.page-main,
-	.page-aside
-		margin-top: $space-md
-
-	// ----- Page Single-Course  ----- //
-	&--single-course
-		.page-main
-			margin-top: 0
-
-// ----- Page Main ----- //
-.page-main
-	overflow: hidden

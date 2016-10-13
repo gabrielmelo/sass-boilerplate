@@ -1,27 +1,92 @@
 
 // -------------------------------------
-//   PARAGRAPHY & BLOCKQUOTE
+//   TYPOGRAPHY SIZES 
 // -------------------------------------
 
+// ----- Headings ----- //
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	font-family: $font-family-primary
+
 p
-	margin-top: 0
-	margin-bottom: $space-md
 	+font-size(16)
 	+line-height(24)
-	color: $grey
 
 blockquote
 	margin-top: 0
 
 
+// -------------------------------------
+//   TEXT MODIFIERS
+// -------------------------------------
+
+// ----- Text Colors ----- //
+
+// Default
+p
+	color: $dark
+
+// Gray
+.text-gray
+	color: $grey
+
+// Primary
+.text-primary
+	color: $primary
+
+// Sucess
+.text-sucess
+	color: $sucess
+
+// Error
+.text-error
+	color: $error
+
+
+// ----- Text Align ----- //
+
+// Center
+.align-center
+	text-align: center
+
+// Right
+.align-right
+	text-align: right
+
+// Justify
+.align-justify
+	text-align: justify
+
+
+// ----- Text Transform ----- //
+
+// Uppercase
+.text-uppercase
+	text-transform: uppercase
+
+
+// ----- Text Decoration ----- //
+
+.text-line-through
+	text-decoration: line-through
+
+
+// ----- Text Style ----- //
+
+.text-oblique
+	text-style: oblique
+
 // .caption 
 // .blockquote
 // .pull-quote
 
-// strong
+//strong
 //small
 //italic
-//Emphasis styles (muted, error, success)
 
 // Time or date
 // Inline quotes (q)

@@ -1,6 +1,3 @@
 ## SASS ##
 .sass-cache/
 *.css.map
-
-## WebStorm ##
-.idea/

@@ -1,100 +1,58 @@
 // -------------------------------------
-//  CONTAINER
+//  GRID
 // -------------------------------------
 
+// ----- Variables ----- //
+
+$class-slug: column !default
+$column-count: 12
+$gutter: 1em
+
+
+// ----- Mixin ----- //
+
+@mixin column($gutter: 1em, $align: top, $first: false, $last: false)
+	padding-left: if($first, 0, $gutter)
+	padding-right: if($last, 0, $gutter)
+	vertical-align: $align
+    
+
+// ----- Container & Wrapper ----- //
 .container
 	margin: 0 auto
-	max-width: $max-width-container
 
-// -------------------------------------
-//  GRID SYSTEM
-// -------------------------------------
+	&--standard
+		max-width: 75em
+	
+	&--medium
+		max-width: 50em
+	
+	&--small
+		max-width: 40em
+
+.wrapper
+	@extend .container
 
 // ----- Row ----- //
-
 .row
+	font-size: 0
+
+.row-no-gutter
 	margin-left: -$gutter
 	margin-right: -$gutter
 
-// ----- Columns  ----- //
-
-[class^="column-"]
-	float: left
-	padding: 0 $gutter
-
-.row:after
-	content: ""
-	display: table
-	clear: both
-
-
-/* Column widths  */
-@for $i from 1 through $column-count
-	.column-#{$i}
-		width: ( 100 / $column-count ) * $i * 1%
-
-@for $i from 1 through $column-count
-	+mobile
-		.pull-#{$i}
-			margin-left: 0
-
-	+desktop
-		.pull-#{$i}
-			margin-left: ( 100 / $column-count ) * $i * 1%
-
-@for $i from 1 through $column-count
-	+mobile
-		.push-#{$i}
-			margin-right: 0
-
-	+desktop
-		.push-#{$i}
-			margin-right: ( 100 / $column-count ) * $i * 1%
-
-/* Special Classes */
-.column-full
+// ----- Column ----- //
+.column
+	box-sizing: border-box
+	font-size: 16px
+	display: inline-block
 	width: 100%
+	+column($align: center)
 
-.column-third
-	width: (100 / 3) * 1%
++desktop
+	.column
+		+column($align: top)
 
-
-.column-two-thirds
-	width: (100 / 3) * 2%
-
-.column-half
-	width: (100 / 2) * 1%
-
-
-.column-quarter
-	width: (100 / 4) * 1%
-
-/* Responsive */
-@media (max-width: $screen-sm)
-	.container
-		width: $container-sm
-
-	[class^="column-"]
-		width: 100%
-		margin-bottom: $gutter
-
-	/* The row */
-	.row
-		margin-left: -$gutter / 2
-		margin-right: -$gutter / 2
-
-@media (max-width: $screen-md)
-	[class^="column-"]
-		float: left
-		padding: 0 $gutter / 2
-
-	/* The row */
-	.row
-		margin-left: -$gutter
-		margin-right: -$gutter
-
-
-@media (max-width: $screen-lg)
-	// ----- Container  ----- //
-	.container
-		width: $container-lg
+	@for $i from 1 through 12
+		.#{$class-slug}-#{$i}
+			width: percentage( 1 / $column-count) * $i

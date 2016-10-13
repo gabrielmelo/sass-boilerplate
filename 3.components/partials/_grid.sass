@@ -20,15 +20,16 @@ $gutter: 1em
 // ----- Container & Wrapper ----- //
 .container
 	margin: 0 auto
-
-	&--standard
-		max-width: 75em
+	max-width: $container
+	width: 100%
 	
+	//medium
 	&--medium
-		max-width: 50em
+		max-width: $container-md
 	
+	//small
 	&--small
-		max-width: 40em
+		max-width: $container-sm
 
 .wrapper
 	@extend .container

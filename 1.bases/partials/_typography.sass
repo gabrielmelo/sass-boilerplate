@@ -1,7 +1,6 @@
-
-// -------------------------------------
-//   	TYPOGRAPHY SIZES 
-// -------------------------------------
+/* ------------------------------------- */
+/*  TYPOGRAPHY SIZES 
+/* ------------------------------------- */
 
 // ----- Headings ----- //
 h1,
@@ -12,17 +11,31 @@ h5,
 h6
 	font-family: $font-family-primary
 
+
+// ----- Paragraphy ----- //
 p
 	+font-size(16)
 	+line-height(24)
 
-blockquote
-	margin-top: 0
+
+// ----- Text ----- //
+
+.text-hg
+	font-size: $b-text-hg
+
+.text-bg
+	font-size: $b-text-bg
+
+.text-md
+	font-size: $b-text-md
+
+.text-sm
+	font-size: $b-text-sm
 
 
-// -------------------------------------
-// 		TEXT COLORS
-// -------------------------------------
+/* ------------------------------------- */
+/*  TEXT COLORS
+/* ------------------------------------- */
 
 // Default
 p
@@ -45,28 +58,24 @@ p
 	color: $error
 
 
-// -------------------------------------
-//   TEXT MODIFIERS
-// -------------------------------------
+/* ------------------------------------- */
+/*  TEXT MODIFIERS
+/* ------------------------------------- */
 
 // ----- Text Align ----- //
 
-// Center
 .align-center
 	text-align: center
 
-// Right
 .align-right
 	text-align: right
 
-// Justify
 .align-justify
 	text-align: justify
 
 
 // ----- Text Transform ----- //
 
-// Uppercase
 .text-uppercase
 	text-transform: uppercase
 
@@ -81,6 +90,48 @@ p
 
 .text-oblique
 	text-style: oblique
+
+
+/* ------------------------------------- */
+/*  HEADINGS
+/* ------------------------------------- */
+
+// ----- Title ----- //
+.title
+	color: $b-title-color
+	font-weight: $b-title-font-weight
+	
+	&--hg // huge
+		font-size: $b-title-hg
+	
+	&--bg // big
+		font-size: $b-title-bg
+	
+	&--md // medium
+		font-size: $b-title-md
+	
+	&--sm // small
+		font-size: $b-title-sm
+
+
+// ----- SubTitle ----- //
+.subtitle
+	color: $b-subtitle-color
+	font-weight: $b-subtitle-font-weight 
+	
+	&--hg // huge
+		font-size: $b-subtitle-hg
+	
+	&--bg // big
+		font-size: $b-subtitle-bg
+	
+	&--md // medium
+		font-size: $b-subtitle-md
+	
+	&--sm // small
+		font-size: $b-subtitle-sm
+
+
 
 // .caption 
 // .blockquote

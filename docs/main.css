@@ -281,6 +281,9 @@ input[type="search"] {
     opacity: 0; }
   90% {
     opacity: 1; } }
+/* ------------------------------------- */
+/*  TYPOGRAPHY SIZES */
+/* ------------------------------------- */
 h1,
 h2,
 h3,
@@ -293,9 +296,21 @@ p {
   font-size: 1em;
   line-height: 1.5; }
 
-blockquote {
-  margin-top: 0; }
+.text-hg {
+  font-size: 3em; }
 
+.text-bg {
+  font-size: 2em; }
+
+.text-md {
+  font-size: 1.6em; }
+
+.text-sm {
+  font-size: 1em; }
+
+/* ------------------------------------- */
+/*  TEXT COLORS */
+/* ------------------------------------- */
 p {
   color: #000; }
 
@@ -311,6 +326,9 @@ p {
 .text-error {
   color: #e44278; }
 
+/* ------------------------------------- */
+/*  TEXT MODIFIERS */
+/* ------------------------------------- */
 .align-center {
   text-align: center; }
 
@@ -328,6 +346,33 @@ p {
 
 .text-oblique {
   text-style: oblique; }
+
+/* ------------------------------------- */
+/*  HEADINGS */
+/* ------------------------------------- */
+.title {
+  color: #ccc;
+  font-weight: 500; }
+  .title--hg {
+    font-size: 3em; }
+  .title--bg {
+    font-size: 2em; }
+  .title--md {
+    font-size: 1.6em; }
+  .title--sm {
+    font-size: 1em; }
+
+.subtitle {
+  color: #ccc;
+  font-weight: 500; }
+  .subtitle--hg {
+    font-size: 2em; }
+  .subtitle--bg {
+    font-size: 1.6em; }
+  .subtitle--md {
+    font-size: 1em; }
+  .subtitle--sm {
+    font-size: 0.75em; }
 
 .icon {
   display: inline-block;

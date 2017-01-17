@@ -16,52 +16,18 @@ Para pré-processar o arquivo Sass em CSS execute: ``` sass --watch path/main.sa
 Observação: Antes de útilizar o Sass como pré-processador para CSS, é necessário instalá-lo em sua máquina por meio de programas ou linha de comanado. Mais informações do processo [acesse](http://sass-lang.com/install)
 
 ## Sass Directories
-
-```
-sass/
-|
-|– abstracts/
-|   |– _variables.scss    # Sass Variables
-|   |– _functions.scss    # Sass Functions
-|   |– _mixins.scss       # Sass Mixins
-|   |– _placeholders.scss # Sass Placeholders
-|
-|– base/
-|   |– _reset.scss        # Reset/normalize
-|   |– _typography.scss   # Typography rules
-|   …                     # Etc.
-|
-|– elements/
-|   |– _buttons.scss      # Buttons
-|   |– _carousel.scss     # Carousel
-|   |– _cover.scss        # Cover
-|   |– _dropdown.scss     # Dropdown
-|   …    
-|– components/
-|   |– _buttons.scss      # Buttons
-|   |– _carousel.scss     # Carousel
-|   |– _cover.scss        # Cover
-|   |– _dropdown.scss     # Dropdown
-|   …                     # Etc.
-|
-|– layout/
-|   |– _navigation.scss   # Navigation
-|   |– _grid.scss         # Grid system
-|   |– _header.scss       # Header
-|   |– _footer.scss       # Footer
-|   |– _sidebar.scss      # Sidebar
-|   |– _forms.scss        # Forms
-|   …                     # Etc.
-|
-|– pages/
-|   |– _home.scss         # Home specific styles
-|   |– _contact.scss      # Contact specific styles
-|   …                     # Etc.
-|
-|– themes/
-|   |– _theme.scss        # Default theme
-|   |– _admin.scss        # Admin theme
-|   …                     # Etc.
-|
-`– main.scss              # Main Sass file
-```
+1. Abstracts
+2. Bases
+  São os arquivos de predefinições para o projeto. Eles quase sempre serão aplicados a todas as páginas do projetos. O diretório base pode conter o seguinte tipo de arquivos Sass:
+  - Reset
+  - Fonts
+  - Anchor
+  - Animation
+  - Typography
+  - Utils
+  
+3. Components
+4. Elements
+5. Layouts
+6. Pages
+7. Themes

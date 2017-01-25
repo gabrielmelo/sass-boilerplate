@@ -2,157 +2,83 @@
 // COLORS
 // -------------------------------------
 
-// ----- Palette ----- //
+// ----- Brand ----- //
 $primary-color: blue
 
+// ----- Palette ----- //
 $blue: #00a0c9
 $green: #00c8ae
 $yellow: #ffd52a
 $pink: #e44278
 $grey: #848c90
-$dark: #000
-$white: #f5f5f5
 
+$dark: #000000
 $dark-blue: #006a86
 $dark-green: #00907c
 $dark-yellow: #dbb623
 $dark-grey: #3e4244
 
+$white: #f5f5f5
 $light-grey: #becad0
 
-$sucess: $green
-$error: $pink
+
+// -------------------------------------
+// GLOBAL VARIABLES
+// -------------------------------------
+
+// ----- Regular font family ----- //
+$sans-family-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default
 
 
 // -------------------------------------
-//   BASE VARIABLES
+// CONTAINER's
 // -------------------------------------
 
-// ----- Title & Subtitle Colors ----- //
-$b-title-color: #ccc
-$b-subtitle-color: #ccc
+// Container small
+// 40 * 16 = 640
+$container-sm: 40em
 
+// Container medium
+// 50 * 16 = 800
+$container-md: 50em
 
-// ----- Text Weight ----- //
-$b-title-font-weight: 500
-$b-subtitle-font-weight: 500
-
-$b-text-weight: 500
-
-
-// ----- Title Sizes ----- //
-
-$b-title-hg: 3em
-
-$b-title-bg: 2em
-
-$b-title-md: 1.6em
-
-$b-title-sm: 1em
-
-
-// ----- Subtitle Sizes ----- //
-
-$b-subtitle-hg: 2em
-
-$b-subtitle-bg: 1.6em
-
-$b-subtitle-md: 1em
-
-$b-subtitle-sm: 0.75em
-
-
-// ----- Text Sizes ----- //
-
-$b-text-hg: 3em
-
-$b-text-bg: 2em
-
-$b-text-md: 1.6em
-
-$b-text-sm: 1em
-
+// Container large
+// 75 * 16 = 1200
+$container: 75em
 
 
 // -------------------------------------
-//   CONFIG VARIABLES
+// BREAKPOINTS
 // -------------------------------------
-
-
-//// ----- Font Family ----- //
-$font-family-primary: 'Hind', Helvetica, Arial, sans-serif
-
-// ----- Base line ----- //
-$line-height: 1
-$font-size-adjust: 0.5
-
-// ----- Font ----- //
-$font-size: 16
-$font-size-xs: #{12 / $font-size}em
-
-// ----- Heading ----- //
-$heading-1: 28 / $font-size
-$heading-2: 20 / $font-size
-$heading-3: 16 / $font-size
-$heading-4: 14 / $font-size
-$heading-5: 12 / $font-size
-
-
-// ----- Borders & Box Shadow ----- //
-$border-color: $grey
-//$b-border-radius: 5px
-//$b-borderStyle: solid
-//$b-borderWidth: 1px
-//$b-boxShadow: 0 2px 0 rgba($gray-light, 0.25)
-////-$b-border: $b-borderWidth $b-borderStyle $l-colorBorder
-//
-// ----- Margin and Padding ----- //
-
-$space: 20
-
-// Extra small
-$space-xs: #{$space / 4}px
-
-// Small
-$space-sm: #{$space / 2}px
-
-// Medium
-$space-md: #{$space}px
-
-// Large
-$space-lg: #{$space * 2}px
-
-// Extra Large
-$space-xl: #{$space * 4}px
-
-
-
-// -------------------------------------
-//   COMPONENTS
-// -------------------------------------
-
-
-// ----- Grid ----- //
-
-$class-slug: column !default
-$column-count: 12
-$gutter: 1em
-
-// ----- Container ----- //
-
-$container-sm: 40em // container small
-
-$container-md: 50em // container medium
-
-$container: 75em // container standard
-
 
 // ----- Screen sizes ----- //
 
-$screen-xs: 320px // Screen extra small
+// Screen small
+// 20 * 16 = 320
+$screen-sm: 20em 
 
-$screen-sm: 768px // Screen small
+// Screen medium
+// 48 * 16 = 768
+$screen-md: 48em
 
-$screen-md: 992px // Screen medium
+// Screen large
+// 64 * 16 = 1024
+$screen-lg: 64em 
 
-$screen-lg: 1300px // Screen Large
+// Screen Large
+// 75 * 16 = 1200
+$screen-xl: 75em
+
+// Breakpoints map
+$breakpoints: (
+	'small': $screen-sm,
+	'medium': $screen-md,
+	'large': $screen-lg
+)
+
+// -------------------------------------
+// OTHERS
+// -------------------------------------
+// Relative or absolute URL where all assets are served from
+// $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;

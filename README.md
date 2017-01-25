@@ -1,6 +1,6 @@
 # Sass Boilerplate
 
-Sass Boilerplate é um pontapé inicial para projectos feitos em Sass. Nele, traremos referencias as boas práticas abordadas em [SMACSS](https://smacss.com), (Sass Guidelines)[https://sass-guidelin.es] e [CSS Guidelines](http://cssguidelin.es). Essa abordagem é flexível e passa por contastante mudança, evolução e correção quando necessário para o desenvolvimento Front-end diário.
+Sass Boilerplate é um pontapé inicial para projectos feitos em Sass. Nele traremos referencias as boas práticas abordadas em [SMACSS](https://smacss.com), (Sass Guidelines)[https://sass-guidelin.es] e [CSS Guidelines](http://cssguidelin.es). Essa abordagem é flexível e passa por contastante mudança, evolução e correção quando necessário para o desenvolvimento Front-end diário.
 
 
 ## Install
@@ -27,7 +27,37 @@ Observação: Antes de útilizar o Sass como pré-processador para CSS, é neces
   - Utils
   
 3. Components
+  Componentes são formados por elementos que compões o layout, são eles:
+  - Alert
+  - Avatar
+  - Bredcrumb
+  - Button
+  - Carousel
+  - Collapse
+  - Slider
+  - Hero
+  - Tab
+  - Pagination
+  - Widgets
+
 4. Elements
+  Elementos são itens que compões um componente. Exemplo de elementos:
+  - Badge
+  - Logo
+  - Rating
+  - Tag
+
 5. Layouts
+  Layouts peças formadas por componentes aplicados repedidamente no template da página. São eles:
+  - Article
+  - Main Content
+  - Footer
+  - Grid
+  - Header
+  - Section
+  - Sidebar
+
 6. Pages
+
+
 7. Themes

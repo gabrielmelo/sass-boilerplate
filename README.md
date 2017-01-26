@@ -17,17 +17,15 @@ Observação: Antes de útilizar o Sass como pré-processador para CSS, é neces
 
 ## Sass Directories
 1. Abstracts
-2. Bases
-  São os arquivos de predefinições para o projeto. Eles quase sempre serão aplicados a todas as páginas do projetos. O diretório base pode conter o seguinte tipo de arquivos Sass:
+2. Bases são os arquivos de predefinições para o projeto. Eles quase sempre serão aplicados a todas as páginas do projetos. O diretório base pode conter o seguinte tipo de arquivos Sass:
   - Reset
   - Fonts
   - Anchor
   - Animation
   - Typography
   - Utils
-  
-3. Components
-  Componentes são formados por elementos que compões o layout, são eles:
+
+3. Componentes são formados por elementos que compões o layout, são eles:
   - Alert
   - Avatar
   - Bredcrumb
@@ -40,15 +38,13 @@ Observação: Antes de útilizar o Sass como pré-processador para CSS, é neces
   - Pagination
   - Widgets
 
-4. Elements
-  Elementos são itens que compões um componente. Exemplo de elementos:
+4. Elementos são itens que compões um componente. Exemplo de elementos:
   - Badge
   - Logo
   - Rating
   - Tag
 
-5. Layouts
-  Layouts peças formadas por componentes aplicados repedidamente no template da página. São eles:
+5. Layouts peças formadas por componentes aplicados repedidamente no template da página. São eles:
   - Article
   - Main Content
   - Footer

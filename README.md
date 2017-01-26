@@ -1,6 +1,6 @@
 # Sass Boilerplate
 
-Sass Boilerplate é um pontapé inicial para projectos feitos em Sass. Nele traremos referencias as boas práticas abordadas em [SMACSS](https://smacss.com), (Sass Guidelines)[https://sass-guidelin.es] e [CSS Guidelines](http://cssguidelin.es). Essa abordagem é flexível e passa por contastante mudança, evolução e correção quando necessário para o desenvolvimento Front-end diário.
+Sass Boilerplate é um pontapé inicial para projectos feitos em Sass. Nele traremos referencias as boas práticas abordadas em [SMACSS](https://smacss.com), [Sass Guidelines](https://sass-guidelin.es) e [CSS Guidelines](http://cssguidelin.es). Essa abordagem é flexível e passa por contastante mudança, evolução e correção quando necessário para o desenvolvimento Front-end diário.
 
 
 ## Install

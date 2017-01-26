@@ -2,48 +2,54 @@
 // GRID
 // -------------------------------------
 
+// Variables
 
-// ----- Mixin ----- //
+$class-slug: column !default
+$column-count: 12
+$gutter: 1em
+
+
+// Mixin
 
 @mixin column($gutter: 1em, $align: top, $first: false, $last: false)
-	padding-left: if($first, 0, $gutter)
-	padding-right: if($last, 0, $gutter)
-	vertical-align: $align
+    padding-left: if($first, 0, $gutter)
+    padding-right: if($last, 0, $gutter)
+    vertical-align: $align
 
 // ----- Container ----- //
 .container
-	margin: 0 auto
-	max-width: $container
-	width: 100%
-	
-	//medium
-	&--medium
-		max-width: $container-md
-	
-	//small
-	&--small
-		max-width: $container-sm
+    margin: 0 auto
+    max-width: $container
+    width: 100%
+
+    //medium
+    &--medium
+        max-width: $container-md
+
+    //small
+    &--small
+        max-width: $container-sm
 
 // ----- Row ----- //
 .row
-	font-size: 0
+    font-size: 0
 
 .row-no-gutter
-	margin-left: -$gutter
-	margin-right: -$gutter
+    margin-left: -$gutter
+    margin-right: -$gutter
 
 // ----- Column ----- //
 .column
-	box-sizing: border-box
-	font-size: 16px
-	display: inline-block
-	width: 100%
-	+column($align: center)
+    box-sizing: border-box
+    font-size: 16px
+    display: inline-block
+    width: 100%
+    +column($align: center)
 
 +desktop
-	.column
-		+column($align: top)
+    .column
+        +column($align: top)
 
-	@for $i from 1 through 12
-		.#{$class-slug}-#{$i}
-			width: percentage( 1 / $column-count) * $i
+    @for $i from 1 through 12
+        .#{$class-slug}-#{$i}
+            width: percentage( 1 / $column-count) * $i

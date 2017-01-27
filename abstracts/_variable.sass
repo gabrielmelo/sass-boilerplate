@@ -29,6 +29,24 @@ $light-grey: #becad0
 // ----- Regular font family ----- //
 $sans-family-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default
 
+$baseline: 1em
+
+
+// ----- Margin and Padding ----- //
+$base-space: 16
+
+// Extra small
+$space-small: ($base-space / 4) * 1px
+
+// Medium
+$space-medium: ($base-space / 2) * 1px
+
+// Large
+$space-large: ($base-space * 2) * 1px
+
+// Extra Large
+$space-huge: ($base-space * 4) * 1px
+
 
 // -------------------------------------
 // CONTAINER's
@@ -36,15 +54,19 @@ $sans-family-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helv
 
 // Container small
 // 40 * 16 = 640
-$container-sm: 40em
+$container-small: 40em
 
 // Container medium
 // 50 * 16 = 800
-$container-md: 50em
+$container-medium: 50em
 
 // Container large
 // 75 * 16 = 1200
-$container: 75em
+$container-large: 64em
+
+// Container huge
+// 75 * 16 = 1200
+$container-huge: 75em
 
 
 // -------------------------------------
@@ -54,31 +76,27 @@ $container: 75em
 // ----- Screen sizes ----- //
 
 // Screen small
-// 20 * 16 = 320
-$screen-sm: 20em
+// 20 * 16 = 320px
+$screen-small: 20em
 
 // Screen medium
-// 48 * 16 = 768
-$screen-md: 48em
+// 48 * 16 = 768px
+$screen-medium: 48em
 
 // Screen large
-// 64 * 16 = 1024
-$screen-lg: 64em
+// 64 * 16 = 1024px
+$screen-large: 64em
 
 // Screen Large
-// 75 * 16 = 1200
-$screen-xl: 75em
+// 75 * 16 = 1200px
+$screen-huge: 75em
 
-// Breakpoints map
-// $breakpoints: (
-//     small: $screen-sm,
-//     medium: $screen-md,
-//     large: $screen-lg
-// );
+// Breakpoints maps
+$breakpoints: ( small: $screen-small, medium: $screen-medium, large: $screen-large, huge: $screen-huge )
 
 // -------------------------------------
 // OTHERS
 // -------------------------------------
 // Relative or absolute URL where all assets are served from
-// $base-url: 'http://cdn.example.com/assets/';
+// $base-url: 'http://example.com/assets/';
 $base-url: '/assets/' !default

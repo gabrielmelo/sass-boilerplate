@@ -53,7 +53,9 @@ Observação: Antes de útilizar o Sass como pré-processador para CSS, é neces
   - Section
   - Sidebar
 
-6. Pages
-
+6. Pages contém(caso exista), estilos específicos à página em questão
+  - Blog
+  - Contact
+  - Home
 
 7. Themes

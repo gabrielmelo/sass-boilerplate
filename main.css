@@ -5,9 +5,11 @@ html {
   box-sizing: inherit; }
 
 a {
-  color: blue; }
-  a:hover {
-    color: #0000cc; }
+  color: blue;
+  text-decoration: none; }
+  a:hover, a:active, a:focus {
+    color: #006a86;
+    text-decoration: underline; }
 
 /* ------------------------------------- */
 /* TYPOGRAPHY */
@@ -54,31 +56,13 @@ body {
 button.btn,
 a.btn,
 input[type="button"].btn {
+  display: inline;
   cursor: pointer;
   display: inline-block;
-  vertical-align: middle;
-  text-transform: uppercase;
-  letter-spacing: 0.4px; }
+  vertical-align: middle; }
 
-.media .image {
-  display: block;
-  overflow: hidden;
-  position: relative; }
-  .media .image:before {
-    display: block;
-    content: "";
-    width: 100%;
-    padding-top: 56.25%; }
-  .media .image > .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; }
-
-.image--group .image {
-  display: inline;
-  vertical-align: top; }
+.media {
+  margin: 64px; }
 
 .container {
   margin: 0 auto;
@@ -104,47 +88,5 @@ input[type="button"].btn {
   padding-left: 1em;
   padding-right: 1em;
   vertical-align: center; }
-
-@media only screen and (min-width: 48em) {
-  .column {
-    padding-left: 1em;
-    padding-right: 1em;
-    vertical-align: top; }
-
-  .column-1 {
-    width: 8.33333%; }
-
-  .column-2 {
-    width: 16.66667%; }
-
-  .column-3 {
-    width: 25%; }
-
-  .column-4 {
-    width: 33.33333%; }
-
-  .column-5 {
-    width: 41.66667%; }
-
-  .column-6 {
-    width: 50%; }
-
-  .column-7 {
-    width: 58.33333%; }
-
-  .column-8 {
-    width: 66.66667%; }
-
-  .column-9 {
-    width: 75%; }
-
-  .column-10 {
-    width: 83.33333%; }
-
-  .column-11 {
-    width: 91.66667%; }
-
-  .column-12 {
-    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

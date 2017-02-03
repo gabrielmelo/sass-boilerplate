@@ -25,7 +25,7 @@ Observação: Antes de útilizar o Sass como pré-processador para CSS, é neces
   - Typography
   - Utils
 
-3. Componentes são formados por elementos que compões o layout, são eles:
+3. Componentes são formados por elementos que compões o layout, sendo eles:
   - Alert
   - Avatar
   - Bredcrumb
@@ -44,7 +44,7 @@ Observação: Antes de útilizar o Sass como pré-processador para CSS, é neces
   - Rating
   - Tag
 
-5. Layouts peças formadas por componentes aplicados repedidamente no template da página. São eles:
+5. Layouts peças formadas por componentes aplicados repedidamente no template da página, são eles:
   - Article
   - Main Content
   - Footer

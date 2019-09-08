@@ -10,12 +10,27 @@
 git clone https://github.com/gabrielmelo/sass-boilerplate.git
 ```
 
-[download as ZIP](https://github.com/gabrielmelo/sass-boilerplate/archive/master.zip)
+[download](https://github.com/gabrielmelo/sass-boilerplate/archive/master.zip)
 
 ## Organização de arquivos
 
 ### The 7-1 pattern
 
-The abstracts folder gathers all Sass tools and helpers used across the project. Every global variable, function, mixin and placeholder should be put in here.
+- `abstracts/` Insira suas `variables`, `functions`, `mixins`, `placeholders`, `utils` ou `helpers` nesta pasta.  
+  
+- `base/` Nesta pasta, podemos considerar a inclusão de todo nosso código padrão de CSS. Devemos considerar código que alteram a estrutura base do nosso projeto. Exemplo: resets, regras de tipografia, animações. Caso seu projeto utilize classes utilitárias(`margin-left-2`), considere incluí-las aqui. Do contrário, se utiliza por meio de placeholders, aconselho utilizar a pasta `abstracts`.
 
-The rule of thumb for this folder is that it should not output a single line of CSS when compiled on its own. These are nothing but Sass helpers.
+- `components/` Nesta pasta, include todos nossos componentes usados para construir do projeto. São eles: `buttons`, `slides`, `forms` e etcs.
+
+- `layouts/` Contém todas as partes que compõem o layout do projeto. Esta pasta deve ter os principais estilos da página. Como: `header`, `footer`, `navigation`, `sidebar`.  O sistema de `grid`, `user-form` e outros formulários inclusos em páginas, também podem ser armazenados nesta área. 
+
+- `pages/` Nesta pasta, caso seu projeto possua estilo diferente para diferentes páginas, insira seu estilo em `pages`. Exemplos: `blogs`, `single`, `contact`, `404`. 
+
+- `themes/` A maioria dos sites podem ter alguns temas, como: `admin`, `light`, `dark`. Caso seu projeto possua vários temas, esta é a área para ser armazenada o arquivo.
+
+- `vendor/` Caso seu projeto tenha `Font Awesome`, `Bootstrap`, `Jquery UI` e outras `libs`, este é o lugar para eles.
+
+
+### Arquivo principal
+
+- `main.sass`
